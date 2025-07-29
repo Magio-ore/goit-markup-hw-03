@@ -322,6 +322,10 @@ img{
 .portfolio-card {
     background-color: #fff;
     box-sizing: border-box;
+    flex: 1 1 auto;
+}
+
+.portfolio-card:first-child {
     width: calc((100% - 48px) / 3);
 }
 
