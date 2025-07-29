@@ -321,8 +321,6 @@ img{
 /* Portfolio card */
 .portfolio-card {
     width: calc((100% - 48px) / 3);
-    background-color: #fff;
-    box-sizing: border-box;
 }
 
 .portfolio-card img {
