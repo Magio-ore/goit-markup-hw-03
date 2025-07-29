@@ -1,0 +1,225 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    color: #434455;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4d5ae5;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase
+}
+
+.logo span {
+    color: #2e2f42;
+}
+
+.nav-list {
+    list-style: none;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #2e2f42;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav-list li a:hover {
+    color: #404bbf;
+}
+
+.nav-list li a:focus {
+    color: #404bbf;
+}
+
+.nav-list li a:active {
+    color: #404bbf;
+    text-decoration: underline #404bbf 4px;
+}
+
+.contacts {
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contacts ul {
+    list-style: none;
+}
+
+.contacts a {
+    color: #434455;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contacts a:focus{
+    color: #404bbf;
+}
+
+.contacts a:hover {
+    color: #404bbf;
+}
+
+/* Header - End */
+
+/* Hero */
+.hero-image {
+    background-color: #2e2f42;
+    color: #fff;
+}
+.main-text{
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-size: 56px;
+}
+
+.b-order-service {
+    background-color: #4d5ae5;
+    color: white;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.b-order-service:hover {
+    background-color: #404bbf;
+}
+.b-order-service:focus {
+    background-color: #404bbf;
+}
+.text-h{
+    font-weight: 500;
+    font-size: 20px;
+    color: #2e2f42;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+/* Hero - End */
+
+/* Why Choose US */
+.choose-us {
+    background-color: white;
+}
+.p-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #434455;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.text-choose-us{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color:#2e2f42;
+}
+/* Why Choose US - End */
+
+/* Our Team */
+.our-team{
+    background-color: #f4f4fd;
+}
+.our-team .text-h{
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+.our-team li{
+    background-color: #FFFFFF;
+}
+
+.portfolio-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #434455;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.portfolio-name{
+    font-weight: 500;
+    font-size: 20px;
+    color: #2e2f42;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.our-portfolio{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color:#2e2f42;
+}
+
+.m-text-our-team{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color:#2e2f42;
+}
+/* Our Team - End */
+
+/* Footer */
+.footer {
+    background-color: #2e2f42;
+}
+
+.logo-footer {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4d5ae5;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase
+}
+
+.logo-footer span {
+    color: #f4f4fd;
+}
+
+.text-footer {
+    color: #f4f4fd;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Footer - End */
