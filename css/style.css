@@ -80,6 +80,7 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
+    padding: 0 15px;
 }
 
 .logo span {
@@ -89,7 +90,6 @@ img{
 .nav {
     display: flex;
     align-items: center;
-    padding: 24px 0;
 }
 
 .nav-list {
@@ -99,6 +99,7 @@ img{
     display: flex;
     gap: 40px;
     align-items: center;
+    padding: 24px 0;
 }
 
 .nav-list li a {
@@ -152,7 +153,7 @@ img{
 /* Header - End */
 
 /* Hero */
-.container-hero {
+.section-hero {
     background-color: #2E2F42;
     color: white;
     height: 600px;
@@ -160,7 +161,8 @@ img{
     flex-direction: column;         
     justify-content: center;        
     align-items: center;            
-    text-align: center;             
+    text-align: center;   
+    padding: 188px 0;          
 }
 
 .main-text{
@@ -169,6 +171,7 @@ img{
     letter-spacing: 0.02em;
     font-weight: 700;
     font-size: 56px;
+    max-width: 496px; 
 }
 
 .b-order-service {
@@ -182,6 +185,7 @@ img{
     border: none;
     border-radius: 4px;
     margin-top: 48px;
+    min-width: 169px;
 }
 
 .b-order-service:hover {
@@ -259,39 +263,35 @@ img{
 
 .our-team-card {
     background-color: #FFFFFF;
-    border-radius: 4px;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
     text-align: center;
-    padding-bottom: 32px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    border-radius: 0 0 4px 4px;
 }
 
 .our-team-card img {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
     display: block;
     width: 100%;
     height: auto;
 }
 
-.our-team-card .text-h {
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin: 32px 0 8px;
+.team-info {
+    padding: 32px 0;
 }
 
-.our-team-card .p-text {
-    font-size: 16px;
-    color: #434455;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+.team-info .text-h {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-info .p-text {
+    text-align: center;
     margin: 0;
 }
 
 /* Our Team - End */
 
-/* Portfolio */
+/* Portfolio Section */
 .portfolio-section {
     padding: 120px 0;
     background-color: #fff;
@@ -307,20 +307,22 @@ img{
     margin-bottom: 72px;
 }
 
+/* Grid for portfolio */
 .portfolio-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 48px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Portfolio card */
 .portfolio-card {
-    border: 1px solid #e7e9fc;
+    width: calc((100% - 48px) / 3); /* 3 картки в рядок із відступами */
     background-color: #fff;
     box-sizing: border-box;
-    padding-bottom: 32px;
 }
 
 .portfolio-card img {
@@ -329,24 +331,46 @@ img{
     height: auto;
 }
 
+/* Inner block for text */
+.portfolio-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+/* Title */
 .portfolio-name {
     font-weight: 500;
     font-size: 20px;
     color: #2e2f42;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin: 32px 16px 8px;
+    margin-bottom: 8px;
 }
 
+/* Description */
 .portfolio-description {
     font-size: 16px;
     font-weight: 400;
     color: #434455;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin: 0 16px;
+    margin: 0;
 }
-/* Portfolio - END */
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .portfolio-card {
+        width: calc((100% - 24px) / 2); /* 2 картки в ряд */
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-card {
+        width: 100%; /* 1 картка на мобілці */
+    }
+}
+
 
 /* Footer */
 .footer {
