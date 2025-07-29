@@ -61,13 +61,17 @@ img{
 /* Header */
 .header {
     background-color: #fff;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 72px;
-    margin: 0 auto;
-    border-bottom: 1px solid #e7e9fc;
     width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px; /* Виправлено: додали падінги */
+    box-sizing: border-box;
 }
 
 .logo {
@@ -80,7 +84,6 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
-    padding: 0 15px;
 }
 
 .logo span {
@@ -94,12 +97,12 @@ img{
 
 .nav-list {
     list-style: none;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     display: flex;
     gap: 40px;
-    align-items: center;
-    padding: 24px 0;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-list li a {
@@ -107,13 +110,11 @@ img{
     color: #2e2f42;
     font-weight: 500;
     font-size: 16px;
-    padding: 8px 0;
+    padding: 24px 0; /* Виправлено: тепер 24px зверху і знизу */
+    display: inline-block;
 }
 
-.nav-list li a:hover {
-    color: #404bbf;
-}
-
+.nav-list li a:hover,
 .nav-list li a:focus {
     color: #404bbf;
 }
@@ -128,12 +129,13 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
     white-space: nowrap;
-    margin-left: calc(332px - 2vw); 
 }
 
 .contacts ul {
     display: flex;
     gap: 40px;
+    padding: 0;
+    margin: 0;
 }
 
 .contacts a {
@@ -142,13 +144,11 @@ img{
     font-size: 16px;
 }
 
-.contacts a:focus{
+.contacts a:hover,
+.contacts a:focus {
     color: #404bbf;
 }
 
-.contacts a:hover {
-    color: #404bbf;
-}
 
 /* Header - End */
 
@@ -316,11 +316,11 @@ img{
     list-style: none;
     padding: 0;
     margin: 0;
+    width: calc((100% - 48px) / 3);
 }
 
 /* Portfolio card */
 .portfolio-card {
-    width: calc((100% - 48px) / 3); /* 3 картки в рядок із відступами */
     background-color: #fff;
     box-sizing: border-box;
 }
