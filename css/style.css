@@ -372,6 +372,10 @@ img{
     max-width: 1158px;
 }
 
+a .logo-footer {
+    display: inline-block; 
+}
+
 .logo-footer {
     font-weight: bold;
     font-size: 18px;
@@ -382,7 +386,6 @@ img{
     text-transform: uppercase;
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
-    display: inline-block; 
 }
 
 .logo-footer span {
